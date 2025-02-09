@@ -1,0 +1,241 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black
+  }
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+.search-bar input {
+    padding: 0.5rem 1rem;
+    width: 60%;
+    max-width: 500px;
+    border: inset;
+    border-radius: 5px 0 0 5px;
+    color: rgb(63, 100, 123);
+    display: inline-block;
+  }
+  
+  .search-bar button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border:inset;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0 5px 5px 0;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f0f4f8;
+  }
+  
+  /* Main content */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    padding: 5rem 5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0.1, 0.1, 0.1, 0.1);
+  }
+  
+  section:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  h1,
+  h2 {
+    color: #1e90ff;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hero section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  /* Book catalog */
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10rem;
+  }
+  
+  .book-card {
+    background-color: rgb(255, 211, 211);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .book-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .availability {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .available {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .unavailable {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Login form */
+  .login form {
+    border: 0rem;
+    max-width: 400px;
+    justify-content: center;
+    margin: 0 100px;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #187bcd;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      margin-top: 1rem;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .book-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  
