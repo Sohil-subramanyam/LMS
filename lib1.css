@@ -28,9 +28,10 @@
   }
   
   .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color:black
+    
   }
   .search-bar {
     display: flex;
@@ -161,12 +162,25 @@
     color: white;
   }
   
+  #login{
+    background-color: gray;
+    border: dotted;
+    display: block;
+    width: 50rem;
+    justify-self: center;
+    height: 30rem;
+
+  }
+  .login h2{
+    color: inherit;
+  }
   /* Login form */
   .login form {
     border: 0rem;
     max-width: 400px;
     justify-content: center;
-    margin: 0 100px;
+    margin: 20px 10px;
+    color: burlywood;
   }
   
   .form-group {
