@@ -30,7 +30,8 @@
   .logo {
     font-size: 2rem;
     font-weight: bold;
-    color:black
+    color:black;
+    size: 1px;
     
   }
   .search-bar {
