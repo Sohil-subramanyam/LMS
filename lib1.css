@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f0f4f8;
+    background-color: rgb(70, 163, 255);
   }
   
   /* Header and Navigation */
@@ -32,6 +32,7 @@
     font-weight: bold;
     color:black;
     size: 1px;
+    text-align: center;
     
   }
   .search-bar {
@@ -174,6 +175,7 @@
   }
   .login h2{
     color: inherit;
+    justify-content: center;
   }
   /* Login form */
   .login form {
@@ -182,6 +184,8 @@
     justify-content: center;
     margin: 20px 10px;
     color: burlywood;
+    display: grid;
+    gap: 1rem;
   }
   
   .form-group {
