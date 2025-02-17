@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Library LMS</h1>
+        <div>
+            <a href="#catalog" class="px-4">Catalog</a>
+            <a href="#login" class="px-4">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-blue-500 text-white">
+        <h2 class="text-4xl font-bold">Welcome to Our Library</h2>
+        <p class="mt-4 text-lg">Explore a vast collection of books, journals, and research papers.</p>
+    </section>
+
+    <!-- Book Catalog -->
+    <section id="catalog" class="p-8">
+        <h2 class="text-3xl font-bold mb-4">Book Catalog</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 shadow rounded">
+                <h3 class="text-xl font-bold">Book Title 1</h3>
+                <p>Author: John Doe</p>
+                <p>Availability: Available</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <h3 class="text-xl font-bold">Book Title 2</h3>
+                <p>Author: Jane Smith</p>
+                <p>Availability: Borrowed</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <h3 class="text-xl font-bold">Book Title 3</h3>
+                <p>Author: Emily Johnson</p>
+                <p>Availability: Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="p-8 bg-gray-200 text-center">
+        <h2 class="text-3xl font-bold mb-4">Login</h2>
+        <form class="max-w-md mx-auto bg-white p-6 rounded shadow">
+            <label class="block text-left mb-2">Username:</label>
+            <input type="text" class="w-full p-2 border rounded mb-4">
+            
+            <label class="block text-left mb-2">Password:</label>
+            <input type="password" class="w-full p-2 border rounded mb-4">
+            
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center p-4 mt-8">
+        <p>&copy; 2025 Library LMS. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Library Management System</title>
+    <link rel="stylesheet" href="lib1.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="books.jpeg" style="height: 50px; width: 50px;" alt="LMS">BIBLIGO LMS</a>
+            </div>
+            <ul class="top_margin">
+                <li><button style="background-color: rgb(0, 0, 0) ;"><a href="lib1.html">Home</a></button></li>
+                <li><button style="background-color: rgb(0,0,0);"><a href="lib1.html">Catalog</a></button></li>
+                <li><button style="background-color: rgb(0,0,0);"><a href="#login-section">Login</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section" class="login-section">
+            <h2>Login</h2>
+            <form action="lib1.html" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" >Login</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Library Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
